@@ -20,3 +20,23 @@ luego le das a la flecha y das donde dice "commit and push"..
 ojo... no le des solo a commit.. tiene que ser "commit and push"
 
 y como puedes ver esto automaticamente sube el cambio a git gg
+
+
+# Subir codigo a git por comandos
+
+Abres tu terminal..(puede ser cmd, gitbash o la que tu quieras, incluso la terminal de vsc, la terminal de vsc se abre y cierra usando ctrl + j)
+
+usas los siguientes comandos 
+
+```bash
+git add -A
+```
+
+```bash
+git commit -m "Aqui pones el mensaje de tu commit"
+```
+
+```bash
+git push -u origin master
+```
+
