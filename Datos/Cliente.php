@@ -13,7 +13,8 @@ final class Cliente extends Conexion
     {
         $sql = "SELECT cli.idcliente, cli.nombres, cli.apellidos, cli.direccion, cli.telefono, dist.nombre as distrito, cli.email 
         FROM cliente cli 
-        INNER JOIN distrito dist ON cli.distrito = dist.iddistrito";
+        INNER JOIN distrito dist ON cli.distrito = dist.iddistrito
+        ORDER BY cli.idcliente ASC";
         $result = $this->cnx->query($sql);
         $listado = [];
         while ($cliente = $result->fetch_object()) {

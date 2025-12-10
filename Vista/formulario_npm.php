@@ -37,6 +37,24 @@ $npm = $p->encontrar($_GET['id_npm'] ?? 0);
         Dependencias:
         <input type="text" name="num_dep" id="num_dep" value="<?php echo $npm?->num_dep;?>">
         <br>
+        Categoria:
+        <select name="categoria" id="categoria">
+            <option value="anime" <?php echo ($npm?->categoria == 'anime') ? 'selected' : ''; ?>>Anime</option>
+            <option value="proyecto" <?php echo ($npm?->categoria == 'proyecto') ? 'selected' : ''; ?>>Proyecto</option>
+            <option value="kdrama" <?php echo ($npm?->categoria == 'kdrama') ? 'selected' : ''; ?>>Kdrama</option>
+        </select>
+        <br>
+        Plataformas:<br>
+
+        <input type="radio" name="plataforma" id="plataforma1" value="Netflix" <?php echo ($npm?->plataforma == 'Netflix') ? 'checked' : ''; ?>>
+        <label for="plataforma1">Netflix</label>
+        <br>
+        <input type="radio" name="plataforma" id="plataforma2" value="HBO" <?php echo ($npm?->plataforma == 'HBO') ? 'checked' : ''; ?>>
+        <label for="plataforma2">HBO</label>
+        <br>
+        Precio:
+        <input type="text" name="precio" id="" value="<?php echo $npm?->precio ?? ''; ?>">
+        <br>
         <input type="submit" value="<?php echo $_GET['metodo'] ?? 'crear'; ?>">
     </form>
 </body>

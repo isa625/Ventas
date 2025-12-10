@@ -1,12 +1,14 @@
 <?php 
 
 /**
- * Crear un listado (con crud completo)
- *  tipo NPM
+ * Agregar un precio por formulario
+ * Agregar un importe a cada proyecto NPM
  * 
- * el nombre del proyecto.
- * Descripcion breve 
- * enlace web
- * enlace para una imagen( imagen con vista previa)
- * num de dependencias
+ * Categoria Anime: precio + 8
+ * Categoria Proyecto: precio + 9
+ * Categoria Kdrama: precio + 12
+ * 
+ * Plataforma
+ * Netflix += 10%
+ * HBO += 5%
  */

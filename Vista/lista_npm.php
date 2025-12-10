@@ -23,6 +23,10 @@ $lista = $n->listar();
             <th>Enlace web</th>
             <th>Imagen</th>
             <th>Dependencias</th>
+            <th>Categoria</th>
+            <th>Plataforma</th>
+            <th>Precio</th>
+            <th>Importe Total</th>
             <th></th>
             <th></th>
         </tr>
@@ -34,10 +38,14 @@ $lista = $n->listar();
                 <td><a href="<?php echo $npm->enlace_web; ?>" target="_blank">Ver enlace</a></td>
                 <td>
                     <a href="<?php echo $npm->enlace_img; ?>" target="_blank">
-                    <img src="<?php echo $npm->enlace_img;?>" alt="" width="40" height="40">
+                    <img src="<?php echo $npm->enlace_img;?>" alt="" width="50">
                     </a>
                 </td>
                 <td><?php echo $npm->num_dep?></td>
+                <td><?php echo $npm->categoria?></td>
+                <td><?php echo $npm->plataforma?></td>
+                <td><?php echo $npm->precio?></td>
+                <td><?php echo $npm->importeTotal?></td>
                 <td><a href="formulario_npm.php?<?php echo http_build_query([
                     'id_npm' => $npm->id_npm,
                     'metodo' => 'actualizar'
