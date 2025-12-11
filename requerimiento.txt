@@ -1,0 +1,14 @@
+Registro de compras
+
+id
+nombre de un producto
+proveedor -> relacionarse de tabla proveedores
+cantidad
+precio unitario
+total
+check impuestos 
+    Si esta marcado, se le agrega el 18% al total
+    Si no, el total no cambia
+
+
+sumar el total a pagar en el listado de compras
